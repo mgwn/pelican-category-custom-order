@@ -6,7 +6,7 @@ def categoryIndex(key, order, default):
   try:
     return str(order.index(key))
   except:
-    return str(default) + key
+    return str(default) + str(key)
 
 def set_category_order(generator):
   category_custom_order = generator.settings.get('CATEGORIES_CUSTOM_ORDER', None)
